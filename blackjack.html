@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>BlackJack</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript" src="blackjack.js"></script>
+	<link rel="stylesheet" type="text/css" href="blackjack.css"/>
+</head>
+<body id="background">
+
+	<div id="header">
+		<h1 class="header_text">Blackjack</h1>
+	</div>
+
+	<div id="content">
+        <a href="#" class="green button" id="start">Start</a>       <!-- start button -->
+        <a href="#" class="button" id="hit">Hit</a>                 <!-- hit button -->
+        <a href="#" class="button" id="stand">Stand</a>             <!-- stand button -->
+        <a href="#" class="button" id="playAgain">Play Again</a>    <!-- play again button --> 
+        <div class="winner" id="declareWinner"></div>         <!-- declare winner - Win/Lose/Tie -->
+        
+        <div id="userScore">To begin, click Start</div>     <!-- user score display -->
+        <div id="dealerScore">&nbsp;</div>     <!-- dealer score display (non breaking space) -->
+        
+        <div id="table">    <!-- blackjack table -->
+            <div id="userCards"></div>      <!-- user card display -->
+            <div id="dealerCards"></div>    <!-- dealer card display -->
+        </div>
+	</div>
+
+	<div id="footer">
+		<a class="textFooter" href="https://en.wikipedia.org/wiki/Blackjack" target="_blank">Rules</a> <!-- "_blank" opens the link in another window -->
+	</div>
+
+</body>
+</html>

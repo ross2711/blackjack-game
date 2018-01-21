@@ -1,0 +1,115 @@
+#background {
+    background-color: white; /* background color of page */
+}
+
+#header, #footer {      
+    width: 100%;        /* width of header fills 100% of the page */
+    height: 50%;        
+    background-color: black;    /* color of header and footer */
+}
+
+#header {
+    position: relative;     /* normal position, stays in same position - doesnt move with page */
+    top: 0px;               /* padding from the top */
+    border-top-left-radius: 10px;    /* radius around the header */
+    border-top-right-radius: 10px;   /* radius around the header */
+}
+
+#footer{
+    position: relative;     /* normal position, stays in same position - doesnt move with page */
+    bottom: 0px;            /* padding from the bottom */
+    border-bottom-left-radius: 10px;    /* radius around the footer */
+    border-bottom-right-radius: 10px;   /* radius around the footer */
+    height: 50px;           /* height of footer */
+}
+
+#content {              /* container */
+    min-width: 10%;     /* standard min width */
+    min-height: 80%;    /* standard min height */
+    margin-left: auto;  /* space between element */
+    margin-right: auto; /* space between element */ 
+
+}
+
+.header_text {
+    font-family: arial; /* text style of blackjack header */
+    font-size: 35px;    /* font size of blackjack header */
+    color: white;       /* text color of blackjack header */
+    text-align: center; /* horizontal alignment of text within blackjack header*/
+    padding-top: 24px;  /* padding between top of text and top of header bar */
+}
+
+a {
+    text-decoration:none;   
+    color:white;            /* color of 'start' 'hit' 'stand' 'playAgain' buttons */
+    font-family:arial;      /* text style of 'start' 'hit' 'stand' 'playAgain' buttons */   
+}
+
+a:hover {
+    background-color: red;  /* when hovering over the buttons - color changes to red */
+    border-radius: 5px;   /* when hovering over the buttons the radius changes to 5px */
+}
+
+.textFooter {
+    font-family: arial;     /* footer text type */
+    font-size: 20px;        /* text size */
+    text-align: left;       
+    margin-left: 20px;      /* distance from left side of footer */
+}
+
+.button {
+    display: inline-block;  /* buttons displayed in a horizontal line */
+    padding: 20px;          /* space between the buttons */
+    background-color: #999; /* color of buttons */
+}
+
+.green {
+    background-color: #090; /* color of green Start button */
+}
+
+.winner {
+    display: inline-block;  /* buttons displayed in a horizontal line */
+    background-color: orange;   /* color of result display */
+    color: black;               /* color of text */
+    font-family: arial;         /* text type */
+    font-size: 35px;            /* */
+    padding: 2px;               /* padding around text */
+    margin-left: 16.5%;         /* distance from left side of page */
+}
+
+#table {    /*container*/
+    height: 800px;  /* height of the container */
+    background-image: url('images/blackjack_table.png'); /* blackjack table image */
+    background-size: 100%;  /* sized to 100% of available width */
+    background-repeat: no-repeat;  /* stops tiled pattern */ 
+    text-align: center;     /* align contents to center */
+}
+
+#userCards {
+    padding-bottom: 100px;   /* padding to separate cards */
+    padding-top: 100px;      /* padding to separate cards */
+}
+
+.card {
+    display: inline-block;
+    background: #fff;   /* white background behind card */
+    margin-left: 20px;  /* distance from center to separate the cards */
+    margin-right: 20px; /* distance from center to separate the cards */
+    padding: 2px;       /* padding around card */
+}
+
+#playAgain, 
+#stand, 
+#hit, 
+#declareWinner {
+    visibility: hidden; /* playAgain, stand, hit buttons and declareWinner are initially hidden */
+}
+
+/*
+.gameimg {
+    width: 100%;        /* width fits 100% of full screen */
+   /* height: 80%;        /* img is 80% for height */
+  /*  margin-top: 0px;    /* 0 margin */
+  /*  padding-top: 0px;   /* 0 padding *//*
+}   */
+
